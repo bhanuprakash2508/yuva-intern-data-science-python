@@ -1,0 +1,35 @@
+YuvaIntern Week 3 - Clustering Summary
+=============================================
+Rows used: 48842
+Processed features: 64
+Selected k: 6
+Final silhouette score: 0.1280
+
+Cluster sizes:
+cluster
+0    12840
+1     8531
+2    13832
+3      244
+4     2237
+5    11158
+
+Numeric cluster profile:
+               age         fnlwgt  education_num  capital_gain  capital_loss  hours_per_week
+cluster                                                                                     
+0        42.180062  187778.568536       8.777882    600.050156      0.068536       46.226480
+1        51.247802  170154.072911       8.835072    367.448834      1.818192       34.608721
+2        25.150593  208133.518725       9.212912    133.649147      0.204309       34.519665
+3        46.610656  185547.946721      13.024590  99999.000000      0.000000       50.475410
+4        41.770675  188301.862763      10.999106      0.000000   1898.745194       43.345552
+5        40.862699  184218.197616      13.348091   1399.541136      0.634343       44.699677
+
+Categorical modal profile:
+        workclass    education      marital_status       occupation   relationship   race     sex
+cluster                                                                                          
+0         Private      HS-grad  Married-civ-spouse     Craft-repair        Husband  White    Male
+1         Private      HS-grad            Divorced     Adm-clerical  Not-in-family  White  Female
+2         Private      HS-grad       Never-married    Other-service      Own-child  White    Male
+3         Private  Prof-school  Married-civ-spouse   Prof-specialty        Husband  White    Male
+4         Private      HS-grad  Married-civ-spouse  Exec-managerial        Husband  White    Male
+5         Private    Bachelors  Married-civ-spouse   Prof-specialty        Husband  White    Male
