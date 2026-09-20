@@ -9,9 +9,7 @@ ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "outputs"
 OUT.mkdir(exist_ok=True)
 
-# -----------------------------
 # 1. Load the same dataset used in Week 1
-# -----------------------------
 adult = fetch_ucirepo(id=2)
 df = adult.data.features.copy()
 df["income"] = adult.data.targets.iloc[:, 0]
@@ -38,9 +36,7 @@ df["income"] = (
 # Save a cleaned copy used for EDA
 df.to_csv(OUT / "adult_eda_cleaned.csv", index=False)
 
-# -----------------------------
 # 2. Basic statistics
-# -----------------------------
 with open(OUT / "eda_summary.txt", "w", encoding="utf-8") as f:
     f.write("UCI Adult Dataset — Week 2 EDA\n")
     f.write("=" * 45 + "\n")
@@ -57,9 +53,7 @@ with open(OUT / "eda_summary.txt", "w", encoding="utf-8") as f:
     f.write("\n\nMissing values:\n")
     f.write(str(df.isna().sum().sort_values(ascending=False)))
 
-# -----------------------------
 # 3. Univariate analysis
-# -----------------------------
 numeric_cols = [
     c for c in ["age", "fnlwgt", "education_num",
                 "capital_gain", "capital_loss", "hours_per_week"]
@@ -108,9 +102,7 @@ plt.tight_layout()
 plt.savefig(OUT / "04_education_distribution.png", dpi=180)
 plt.close()
 
-# -----------------------------
 # 4. Bivariate analysis
-# -----------------------------
 # Income by education
 edu_income = pd.crosstab(df["education"], df["income"], normalize="index") * 100
 edu_income.to_csv(OUT / "education_income_percentages.csv")
@@ -162,9 +154,7 @@ plt.tight_layout()
 plt.savefig(OUT / "07_hours_vs_income.png", dpi=180)
 plt.close()
 
-# -----------------------------
 # 5. Correlation analysis
-# -----------------------------
 corr_cols = [
     c for c in [
         "age", "fnlwgt", "education_num",
@@ -184,9 +174,7 @@ plt.tight_layout()
 plt.savefig(OUT / "08_correlation_matrix.png", dpi=180)
 plt.close()
 
-# -----------------------------
 # 6. Additional categorical analysis
-# -----------------------------
 if "workclass" in df.columns:
     workclass_counts = df["workclass"].value_counts(dropna=False)
     workclass_counts.to_csv(OUT / "workclass_counts.csv")
@@ -199,9 +187,7 @@ if "occupation" in df.columns:
 grouped = df.groupby("education_num")["age"].agg(["count", "mean", "median"])
 grouped.to_csv(OUT / "education_num_age_summary.csv")
 
-# -----------------------------
 # 7. Automated text findings
-# -----------------------------
 with open(OUT / "key_findings.txt", "w", encoding="utf-8") as f:
     f.write("Week 2 EDA findings generated from the executed dataset.\n")
     f.write("=" * 60 + "\n")
