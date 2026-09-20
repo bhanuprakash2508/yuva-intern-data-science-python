@@ -1,0 +1,2 @@
+Duplicate rows: 52
+Duplicate percentage: 0.11%

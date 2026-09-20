@@ -1,0 +1,6 @@
+column,lower_bound,upper_bound,outlier_count
+age,-2.0,78.0,216
+fnlwgt,-62586.75,417779.25,1453
+capital_gain,0.0,0.0,4035
+capital_loss,0.0,0.0,2282
+hours_per_week,32.5,52.5,13496

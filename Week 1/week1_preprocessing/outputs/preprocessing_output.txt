@@ -1,0 +1,5 @@
+Raw shape: (48842, 17)
+Training rows: 39073
+Testing rows: 9769
+Processed train shape: (39073, 110)
+Processed test shape: (9769, 110)
