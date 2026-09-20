@@ -1,0 +1,37 @@
+
+YuvaIntern Week 6 Capstone Runtime Summary
+===========================================
+
+Dataset rows: 48842
+Input features before encoding: 15
+Processed features for clustering: 66
+
+Unsupervised learning:
+Selected k: 2
+Best silhouette score: 0.7727
+
+Supervised learning:
+Logistic Regression metrics:
+accuracy     0.810114
+precision    0.570429
+recall       0.836612
+f1           0.678342
+roc_auc      0.905226
+
+Deep learning:
+TensorFlow Dense Neural Network metrics:
+accuracy     0.859351
+precision    0.755567
+recall       0.609495
+f1           0.674716
+roc_auc      0.913595
+
+Cluster sizes:
+cluster
+0    48598
+1      244
+
+Model comparison:
+                          model  accuracy  precision   recall       f1  roc_auc
+            Logistic Regression  0.810114   0.570429 0.836612 0.678342 0.905226
+TensorFlow Dense Neural Network  0.859351   0.755567 0.609495 0.674716 0.913595

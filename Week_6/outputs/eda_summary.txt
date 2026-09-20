@@ -1,0 +1,39 @@
+Dataset shape: (48842, 15)
+
+Missing values:
+occupation        2809
+workclass         2799
+age                  0
+fnlwgt               0
+education_num        0
+capital_gain         0
+capital_loss         0
+hours_per_week       0
+net_capital          0
+is_full_time         0
+education            0
+marital_status       0
+relationship         0
+race                 0
+sex                  0
+
+Target distribution:
+income
+0    37155
+1    11687
+
+Target percentages:
+income
+0    76.07
+1    23.93
+
+Numerical descriptive statistics:
+             age       fnlwgt  education_num  capital_gain  capital_loss  hours_per_week  net_capital  is_full_time
+count  48842.000    48842.000      48842.000     48842.000     48842.000       48842.000    48842.000     48842.000
+mean      38.644   189664.135         10.078      1079.068        87.502          40.422      991.565         0.828
+std       13.711   105604.025          2.571      7452.019       403.005          12.391     7475.550         0.377
+min       17.000    12285.000          1.000         0.000         0.000           1.000    -4356.000         0.000
+25%       28.000   117550.500          9.000         0.000         0.000          40.000        0.000         1.000
+50%       37.000   178144.500         10.000         0.000         0.000          40.000        0.000         1.000
+75%       48.000   237642.000         12.000         0.000         0.000          45.000        0.000         1.000
+max       90.000  1490400.000         16.000     99999.000      4356.000          99.000    99999.000         1.000
