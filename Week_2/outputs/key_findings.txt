@@ -1,0 +1,24 @@
+Week 2 EDA findings generated from the executed dataset.
+============================================================
+Dataset size: 48842 rows x 15 columns.
+Income categories: {'<=50K': 37155, '>50K': 11687}
+Mean age by income:
+        count       mean  median  min  max
+income                                    
+<=50K   37155  36.872184    34.0   17   90
+>50K    11687  44.275178    43.0   19   90
+
+Mean hours/week by income:
+        count       mean  median  min  max
+income                                    
+<=50K   37155  38.840048    40.0    1   99
+>50K    11687  45.452896    40.0    1   99
+
+Numerical correlation matrix:
+                  age  fnlwgt  education_num  capital_gain  capital_loss  hours_per_week
+age             1.000  -0.077          0.031         0.077         0.057           0.072
+fnlwgt         -0.077   1.000         -0.039        -0.004        -0.004          -0.014
+education_num   0.031  -0.039          1.000         0.125         0.081           0.144
+capital_gain    0.077  -0.004          0.125         1.000        -0.031           0.082
+capital_loss    0.057  -0.004          0.081        -0.031         1.000           0.054
+hours_per_week  0.072  -0.014          0.144         0.082         0.054           1.000

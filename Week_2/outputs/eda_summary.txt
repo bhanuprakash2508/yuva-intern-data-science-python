@@ -1,0 +1,61 @@
+UCI Adult Dataset — Week 2 EDA
+=============================================
+Rows: 48842
+Columns: 15
+
+Data types:
+age                        int64
+workclass         string[python]
+fnlwgt                     int64
+education         string[python]
+education_num              int64
+marital_status    string[python]
+occupation        string[python]
+relationship      string[python]
+race              string[python]
+sex               string[python]
+capital_gain               int64
+capital_loss               int64
+hours_per_week             int64
+native_country    string[python]
+income            string[python]
+dtype: object
+
+Numerical summary:
+                  count           mean            std      min       25%       50%       75%        max
+age             48842.0      38.643585      13.710510     17.0      28.0      37.0      48.0       90.0
+fnlwgt          48842.0  189664.134597  105604.025423  12285.0  117550.5  178144.5  237642.0  1490400.0
+education_num   48842.0      10.078089       2.570973      1.0       9.0      10.0      12.0       16.0
+capital_gain    48842.0    1079.067626    7452.019058      0.0       0.0       0.0       0.0    99999.0
+capital_loss    48842.0      87.502314     403.004552      0.0       0.0       0.0       0.0     4356.0
+hours_per_week  48842.0      40.422382      12.391444      1.0      40.0      40.0      45.0       99.0
+
+Target distribution:
+income
+<=50K    37155
+>50K     11687
+Name: count, dtype: Int64
+
+Target percentages:
+income
+<=50K    76.07
+>50K     23.93
+Name: proportion, dtype: Float64
+
+Missing values:
+occupation        2809
+workclass         2799
+native_country     857
+fnlwgt               0
+education            0
+education_num        0
+age                  0
+marital_status       0
+relationship         0
+sex                  0
+race                 0
+capital_gain         0
+capital_loss         0
+hours_per_week       0
+income               0
+dtype: int64
