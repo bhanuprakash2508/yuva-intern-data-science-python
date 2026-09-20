@@ -1,16 +1,3 @@
-"""
-YuvaIntern Week 2
-Exploratory Data Analysis and Visualization
-Dataset: UCI Adult / Census Income Dataset
-
-Run:
-    pip install -r requirements.txt
-    python week2_eda.py
-
-The script downloads the public UCI Adult dataset, performs EDA,
-creates statistical summaries and saves annotated visualizations.
-"""
-
 from pathlib import Path
 import pandas as pd
 import numpy as np
