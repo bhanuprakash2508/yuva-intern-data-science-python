@@ -1,0 +1,30 @@
+YuvaIntern Week 4 - Supervised Learning Summary
+=======================================================
+Training rows: 39073
+Testing rows: 9769
+Number of input features before encoding: 15
+
+Cross-validation:
+   metric     mean      std
+ accuracy 0.809562 0.003138
+precision 0.568250 0.004895
+   recall 0.850037 0.005818
+       f1 0.681133 0.004157
+  roc_auc 0.906524 0.001799
+
+Test metrics:
+accuracy     0.810114
+precision    0.570429
+recall       0.836612
+f1           0.678342
+roc_auc      0.905225
+
+Classification report:
+              precision    recall  f1-score   support
+
+       <=50K     0.9397    0.8018    0.8653      7431
+        >50K     0.5704    0.8366    0.6783      2338
+
+    accuracy                         0.8101      9769
+   macro avg     0.7551    0.8192    0.7718      9769
+weighted avg     0.8514    0.8101    0.8206      9769
