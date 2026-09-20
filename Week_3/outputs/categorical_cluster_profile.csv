@@ -1,0 +1,7 @@
+cluster,workclass,education,marital_status,occupation,relationship,race,sex
+0,Private,HS-grad,Married-civ-spouse,Craft-repair,Husband,White,Male
+1,Private,HS-grad,Divorced,Adm-clerical,Not-in-family,White,Female
+2,Private,HS-grad,Never-married,Other-service,Own-child,White,Male
+3,Private,Prof-school,Married-civ-spouse,Prof-specialty,Husband,White,Male
+4,Private,HS-grad,Married-civ-spouse,Exec-managerial,Husband,White,Male
+5,Private,Bachelors,Married-civ-spouse,Prof-specialty,Husband,White,Male
